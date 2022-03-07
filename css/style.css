@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:wght@100&display=swap");
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+/* Efecto del navbar  */
+.navscroll {
+  /* transition: background-color 500ms, color 500ms; */
+  transition: background-color 500ms;
+}
+
+.ancla:before {
+  display: block;
+  content: " ";
+  margin-top: -56px;
+  height: 56px;
+  visibility: hidden;
+}
+
+​
+/* -----------------------------------------  */
+
+
+
+/* menú a la izquierda  */
+.navbar .container {
+  flex-direction: row-reverse;
+}
+
+.carousel-inner .carousel-item {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+.carousel-inner .carousel-item img {
+  /* width: 100%; */
+  height: 100%;
+  filter: grayscale(0.8);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.card {
+  height: 400px;
+  margin-top: 20px;
+  border: 0;
+}
+.card-blue {
+  background-color: rgba(7, 58, 160, 0.5);
+}
+
+.card-red {
+  background-color: rgba(139, 4, 49, 0.5);
+}
+
+.card-gray {
+  background-color: rgba(41, 42, 44, 0.5);
+}
+.card img {
+  height: 100%;
+  filter: grayscale(1);
+  object-fit: cover;
+}
+.card .card-title {
+  font-size: 31px;
+}
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card .card-text {
+  font-size: 15px;
+}
+
+.btn-card {
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* Parallax  */
+.parallax {
+  background-image: url("../img/robo3.png");
+
+  /* Set a specific height */
+  min-height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Tarjetas de datos  */
+.card-datos {
+  height: 265px;
+  background-color: #f2f5f8;
+  color: #004680;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.card-datos .card-subtitle {
+  font-size: 30px;
+}
+
+/* Seccion de información del producto  */
+.img-robotito img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.texto-descripcion {
+  font-weight: bold;
+}
+
+/* casos de exito  */
+.fondo {
+  background-color: #f2f5f8;
+}
+
+/* .card .card-casos {
+  min-height: 300px;
+} */
+
+/* efecto imagen de casos de exito  */
+.card .img-container img {
+  transition-duration: 500ms;
+  filter: grayscale(0);
+  width: 100%;
+}
+.img-container:hover img {
+  /* -webkit-transform: scale(1.3); */
+  transform: scale(1.3);
+  transition-duration: 500ms;
+}
+
+.card .img-container {
+  overflow: hidden;
+  height: 150px;
+}
+/* -----------------------------------  */
+/* sección contacto  */
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* seccion de socios  */
+#carouselSlidesOnly img {
+  filter: grayscale(0);
+}
+
+/* icono whatsapp  */
+
+.whatsapp {
+  position: fixed;
+  bottom: 5px;
+  right: 0px;
+  width: 80px;
+  z-index: 2;
+}
+.whatsapp img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 20px;
+  height: 150px;
+}
+footer span {
+  font-size: 12px;
+}

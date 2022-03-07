@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item {
+    height: 80vh;
+    /* overflow: hidden; */
+  }
+
+  .card-img-overlay button {
+    width: 150px;
+  }
+
+  /* text de card de datos  */
+  .card-datos .card-subtitle {
+    font-size: 20px;
+  }
+
+  /* seccion de socios  */
+  #carouselSlidesOnly img {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .navbar .container {
+    flex-direction: row;
+  }
+}
